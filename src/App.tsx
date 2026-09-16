@@ -837,6 +837,19 @@ export default function App() {
                   >
                     <input type="hidden" name="_form_id" value="4b48ff0860870d737ff49af3d635afaf" />
                     <input type="hidden" name="_subject" value="베스핀글로벌 부트캠프 상담 신청" />
+                    
+                    <div>
+                      <label htmlFor="course_name" className="block text-sm font-bold text-slate-700 mb-1 md:mb-1.5">과정명</label>
+                      <input 
+                        type="text" 
+                        id="course_name" 
+                        name="과정명" 
+                        defaultValue="베스핀글로벌-멀티클라우드엔지니어" 
+                        readOnly
+                        className="w-full px-4 py-2 md:py-2.5 rounded-xl border border-blue-200 focus:border-blue-500 bg-blue-50/70 text-blue-950 font-bold outline-none cursor-default"
+                      />
+                    </div>
+
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                       <div>
                         <label htmlFor="name" className="block text-sm font-bold text-slate-700 mb-1 md:mb-1.5">이름</label>
@@ -942,7 +955,7 @@ export default function App() {
                             </li>
                             <li className="flex gap-2">
                               <span className="font-bold text-slate-700 shrink-0 w-16">수집항목</span>
-                              <span>이름, 나이, 연락처, 교육목적, 문의내용</span>
+                              <span>과정명, 이름, 나이, 연락처, 교육목적, 문의내용</span>
                             </li>
                             <li className="flex gap-2">
                               <span className="font-bold text-slate-700 shrink-0 w-16">보유기간</span>
